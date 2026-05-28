@@ -107,24 +107,6 @@ export default function About() {
               <p className="text-blue-200 text-sm">— MMH Digital</p>
             </div>
 
-            <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
-              <h4 className="font-semibold text-slate-900 mb-3">
-                Teknologier vi bruker
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "Next.js", "React", "TypeScript", "Node.js",
-                  "React Native", "Tailwind CSS", "PostgreSQL", "Figma",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-sm bg-slate-50 text-slate-700 border border-slate-200 px-3 py-1 rounded-full font-medium"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </div>
