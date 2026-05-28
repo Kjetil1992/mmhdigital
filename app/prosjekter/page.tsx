@@ -158,6 +158,36 @@ export default function Prosjekter() {
                   </a>
                 </div>
               </div>
+              {/* Sykkelbutikk demo */}
+              <div className="group bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+                <div className="bg-slate-900 px-4 py-3 flex items-center gap-2">
+                  <div className="flex gap-1.5">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                  </div>
+                  <div className="flex-1 bg-slate-700 rounded px-3 py-1 text-xs text-slate-400">
+                    fjordsykler.no
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full border border-amber-200 uppercase tracking-wide">Demo</span>
+                    <span className="text-xs text-slate-400">Sykkelbutikk / Sport</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mt-2 mb-1">Fjord Sykler</h3>
+                  <p className="text-slate-500 text-sm mb-5">
+                    Nettside for lokal sykkelbutikk med produktkatalog, tjenester og verksted.
+                  </p>
+                  <a
+                    href="/demo/sykkelbutikk"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700"
+                  >
+                    Se demo →
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
