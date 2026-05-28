@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Prosjekter – MMH Digital",
+  title: "Prosjekter – MHH Digital",
   description: "Se hva vi har bygget for våre kunder.",
 };
 

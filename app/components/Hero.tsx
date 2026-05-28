@@ -30,7 +30,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg sm:text-xl text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed">
-          MMHDigital utvikler moderne nettsider og kraftige apper for bedrifter
+          MHHDigital utvikler moderne nettsider og kraftige apper for bedrifter
           som vil skille seg ut i et konkurransepreget marked. Vi kombinerer
           design, teknologi og strategi for å skape løsninger som ikke bare ser
           imponerende ut — men som faktisk leverer resultater.

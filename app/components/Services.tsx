@@ -47,7 +47,7 @@ const services = [
     ),
     title: "Teknologi og ytelse",
     description:
-      "Vi bygger løsninger med fokus på fart, sikkerhet og stabilitet. Nettsider og apper fra MMHDigital er optimalisert for dagens krav — og klare for morgendagens vekst.",
+      "Vi bygger løsninger med fokus på fart, sikkerhet og stabilitet. Nettsider og apper fra MHHDigital er optimalisert for dagens krav — og klare for morgendagens vekst.",
   },
 ];
 

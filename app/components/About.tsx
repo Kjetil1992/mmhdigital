@@ -15,7 +15,7 @@ export default function About() {
           {/* Left */}
           <div>
             <span className="inline-block bg-blue-50 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full border border-blue-200 mb-4">
-              Hvorfor velge MMHDigital?
+              Hvorfor velge MHHDigital?
             </span>
             <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
               Din digitale
@@ -29,7 +29,7 @@ export default function About() {
             </p>
             <p className="text-slate-500 leading-relaxed mb-8">
               Enten du er en startup, lokal bedrift eller etablert selskap,
-              hjelper MMHDigital deg med å ta steget videre digitalt.
+              hjelper MHHDigital deg med å ta steget videre digitalt.
             </p>
 
             <ul className="space-y-3">

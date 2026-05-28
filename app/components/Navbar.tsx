@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#hjem" className="font-bold text-xl text-slate-900 tracking-tight">
-          MMH<span className="text-blue-600">digital</span>
+          MHH<span className="text-blue-600">digital</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

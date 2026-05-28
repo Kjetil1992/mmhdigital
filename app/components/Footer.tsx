@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <a href="#hjem" className="font-bold text-xl text-white tracking-tight">
-              MMH<span className="text-blue-400">digital</span>
+              MHH<span className="text-blue-400">digital</span>
             </a>
             <p className="text-sm mt-1">Nettsider og apper for norske bedrifter</p>
           </div>
@@ -19,7 +19,7 @@ export default function Footer() {
           </nav>
 
           <p className="text-sm">
-            &copy; {year} MMH Digital. Alle rettigheter reservert.
+            &copy; {year} MHH Digital. Alle rettigheter reservert.
           </p>
         </div>
       </div>
