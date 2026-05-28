@@ -113,8 +113,57 @@ export default function Prosjekter() {
           </div>
         </section>
 
+        {/* Demo sites */}
+        <section className="py-20 bg-slate-50">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-amber-50 text-amber-700 text-sm font-semibold px-4 py-1.5 rounded-full border border-amber-200 mb-4">
+                Demo-nettsider
+              </span>
+              <h2 className="text-4xl font-extrabold text-slate-900 mb-3">Inspirasjon</h2>
+              <p className="text-slate-500 max-w-xl mx-auto">
+                Her viser vi eksempler på nettsider vi kan lage for ulike bransjer.
+                Dette er <strong>demoer</strong> – ikke ekte bedrifter.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Rørlegger demo */}
+              <div className="group bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+                <div className="bg-slate-900 px-4 py-3 flex items-center gap-2">
+                  <div className="flex gap-1.5">
+                    <div className="w-2.5 h-2.5 rounded-full bg-red-400" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-yellow-400" />
+                    <div className="w-2.5 h-2.5 rounded-full bg-green-400" />
+                  </div>
+                  <div className="flex-1 bg-slate-700 rounded px-3 py-1 text-xs text-slate-400">
+                    bergevvs.no
+                  </div>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full border border-amber-200 uppercase tracking-wide">Demo</span>
+                    <span className="text-xs text-slate-400">Rørlegger / VVS</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mt-2 mb-1">Berge VVS & Rørlegging</h3>
+                  <p className="text-slate-500 text-sm mb-5">
+                    Profesjonell nettside for rørleggerbedrift med tjenester, anmeldelser og kontaktskjema.
+                  </p>
+                  <a
+                    href="/demo/rorlegger"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700"
+                  >
+                    Se demo →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
-        <section className="py-20 bg-slate-50 text-center px-6">
+        <section className="py-20 bg-white text-center px-6">
           <h2 className="text-3xl font-extrabold text-slate-900 mb-4">
             Har du et prosjekt i tankene?
           </h2>
