@@ -1,10 +1,3 @@
-const stats = [
-  { value: "50+", label: "Prosjekter levert" },
-  { value: "5★", label: "Gjennomsnittlig vurdering" },
-  { value: "100%", label: "Norsk eierskap" },
-  { value: "24/7", label: "Support tilgjengelig" },
-];
-
 const values = [
   {
     icon: (
@@ -38,6 +31,13 @@ const values = [
   },
 ];
 
+const process = [
+  { step: "01", label: "Prat" },
+  { step: "02", label: "Design" },
+  { step: "03", label: "Utvikling" },
+  { step: "04", label: "Lansering" },
+];
+
 export default function About() {
   return (
     <section id="om-oss" className="py-24 bg-slate-50">
@@ -54,14 +54,14 @@ export default function About() {
               <span className="text-blue-600">samarbeidspartner</span>
             </h2>
             <p className="text-slate-500 text-lg leading-relaxed mb-6">
-              MMH Digital er et norsk teknologiselskap som spesialiserer seg på
-              å hjelpe bedrifter med å lykkes digitalt. Vi kombinerer moderne
-              teknologi med et sterkt fokus på brukeropplevelse og forretningsresultater.
+              MMH Digital er en norsk aktør som hjelper bedrifter med å lykkes
+              digitalt. Vi kombinerer moderne teknologi med et sterkt fokus på
+              brukeropplevelse og forretningsresultater.
             </p>
             <p className="text-slate-500 leading-relaxed mb-8">
-              Fra startups til etablerte bedrifter – vi tilpasser oss ditt
-              behov og leverer løsninger som faktisk gjør en forskjell. Vi er
-              stolt norske, og du kan alltid nå oss på telefon eller e-post.
+              Uansett om du starter fra scratch eller vil fornye en eksisterende
+              løsning – vi tilpasser oss ditt behov og leverer noe som faktisk
+              gjør en forskjell.
             </p>
 
             <div className="space-y-4">
@@ -81,29 +81,30 @@ export default function About() {
             </div>
           </div>
 
-          {/* Stats & visual */}
+          {/* Visual */}
           <div className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm text-center"
-                >
-                  <div className="text-4xl font-extrabold text-blue-600 mb-1">
-                    {stat.value}
+            <div className="bg-white border border-slate-100 rounded-2xl p-7 shadow-sm">
+              <h4 className="font-semibold text-slate-900 mb-5">Slik jobber vi</h4>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                {process.map((item, i) => (
+                  <div key={item.step} className="relative flex flex-col items-center text-center">
+                    <div className="w-10 h-10 rounded-full bg-blue-600 text-white text-sm font-bold flex items-center justify-center mb-2">
+                      {item.step}
+                    </div>
+                    {i < process.length - 1 && (
+                      <div className="hidden sm:block absolute top-5 left-[60%] w-full h-px bg-blue-100" />
+                    )}
+                    <span className="text-sm font-medium text-slate-700">{item.label}</span>
                   </div>
-                  <div className="text-sm text-slate-500 font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-8 text-white">
               <p className="text-lg font-semibold mb-2">
                 &ldquo;Vi lager ikke bare nettsider. Vi lager løsninger som skaper vekst.&rdquo;
               </p>
-              <p className="text-blue-200 text-sm">— MMH Digital-teamet</p>
+              <p className="text-blue-200 text-sm">— MMH Digital</p>
             </div>
 
             <div className="bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
