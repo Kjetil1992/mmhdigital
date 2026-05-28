@@ -72,12 +72,21 @@ export default function Prosjekter() {
 
               {/* Images */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="col-span-2 rounded-2xl overflow-hidden shadow-md border border-slate-100 aspect-video">
+                <div className="col-span-2 rounded-2xl overflow-hidden shadow-md border border-slate-100">
+                  <Image
+                    src="/pulse/styrke-app.png"
+                    alt="Pulse – logg økt styrketrening"
+                    width={800}
+                    height={900}
+                    className="object-cover w-full"
+                  />
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-md border border-slate-100 aspect-video">
                   <Image
                     src="/pulse/styrke.jpg"
                     alt="Pulse – styrketrening"
-                    width={800}
-                    height={450}
+                    width={400}
+                    height={225}
                     className="object-cover w-full h-full"
                   />
                 </div>
@@ -90,12 +99,12 @@ export default function Prosjekter() {
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-md border border-slate-100 aspect-video">
+                <div className="col-span-2 rounded-2xl overflow-hidden shadow-md border border-slate-100 aspect-video">
                   <Image
                     src="/pulse/sykkel.jpg"
                     alt="Pulse – sykling"
-                    width={400}
-                    height={225}
+                    width={800}
+                    height={450}
                     className="object-cover w-full h-full"
                   />
                 </div>
