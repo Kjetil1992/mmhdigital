@@ -142,9 +142,16 @@ export default function SykkelbutikkDemo() {
           {/* Hero visual */}
           <div className="hidden lg:grid grid-cols-2 gap-4">
             <div className="col-span-2 bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-              <div className="text-8xl mb-3">🚵</div>
-              <div className="font-bold text-lg">Fjord Trail 29</div>
-              <div className="text-green-400 font-extrabold text-2xl mt-1">12 990 kr</div>
+              <div className="relative h-36 mb-3">
+                <Image
+                  src="https://www.sefiles.net/images/library/large/trek-marlin-7-gen-3--2024-iv-676694-1.png"
+                  alt="Trek Marlin 7 Gen 3"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="font-bold text-lg">Trek Marlin 7 Gen 3</div>
+              <div className="text-green-400 font-extrabold text-2xl mt-1">8 999 kr</div>
               <div className="mt-3 bg-green-600 text-white text-sm font-semibold px-4 py-2 rounded-lg inline-block">Bestselger</div>
             </div>
             <div className="bg-white/5 border border-white/10 rounded-2xl p-4 text-center">
