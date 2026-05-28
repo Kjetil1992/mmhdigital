@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +14,7 @@ const bikes = [
     price: "8 999",
     tag: "Bestselger",
     tagColor: "bg-green-500",
-    emoji: "🚵",
+    img: "https://www.sefiles.net/images/library/large/trek-marlin-7-gen-3--2024-iv-676694-1.png",
     desc: "29-tommers hjul, Shimano Deore 10-trinns gir og hydrauliske skivebremser. Perfekt for norske stier.",
   },
   {
@@ -22,7 +23,7 @@ const bikes = [
     price: "4 999",
     tag: null,
     tagColor: "",
-    emoji: "🚲",
+    img: "https://images2.giant-bicycles.com/b_white%2Cc_fill%2Cg_north%2Ch_400%2Cq_90%2Cw_600/jrgcqwan6iavei7arwfx/MY24-Escape-3_Color-A-Cold-Iron_B.jpg",
     desc: "Allsidig og lett hybridkkel med Shimano 21-trinns gir. Ideell for pendling og fritid.",
   },
   {
@@ -31,7 +32,7 @@ const bikes = [
     price: "16 999",
     tag: "Nyhet",
     tagColor: "bg-blue-500",
-    emoji: "🚴",
+    img: "https://spokesandsports.com/cdn/shop/files/CheckpointALR5-24-41640-B-Primary.webp?v=1752956430&width=1500",
     desc: "Aluminium-ramme med karbongaffel, GRX 1x11-trinns gir og hydrauliske bremser. Takler alt terreng.",
   },
   {
@@ -40,17 +41,17 @@ const bikes = [
     price: "39 990",
     tag: "Populær",
     tagColor: "bg-orange-500",
-    emoji: "⚡",
+    img: "https://www.sefiles.net/images/library/large/specialized-turbo-vado-4.0-1194281-11.png",
     desc: "130 Nm Specialized-motor, 710 Wh batteri og opptil 130 km rekkevidde. Norges mest solgte el-sykkel.",
   },
   {
-    name: "Woom 4 (20\")",
+    name: "Woom Original 4",
     category: "Barnesykkel",
     price: "3 990",
     tag: null,
     tagColor: "",
-    emoji: "🧒",
-    desc: "Ultralett aluminiumsykkel for barn 6–9 år (110–125 cm). 7-trinns Shimano og ergonomiske håndtak.",
+    img: "https://assets.woom.com/cdn-cgi/image/w=2528,f=png/products/100885-0000-5007-side.png",
+    desc: "Ultralett aluminiumsykkel for barn 6–9 år (110–125 cm). 7-trinns gir og ergonomiske håndtak.",
   },
   {
     name: "Trek Domane AL 4 Disc",
@@ -58,7 +59,7 @@ const bikes = [
     price: "11 999",
     tag: null,
     tagColor: "",
-    emoji: "🏆",
+    img: "https://www.sefiles.net/images/library/large/trek-domane-al-3-disc-copy-380928-110.jpg",
     desc: "IsoSpeed-dempingsteknologi, Shimano Tiagra 20-trinns gir og hydrauliske skivebremser. Komfort på lang distanse.",
   },
 ];
@@ -184,8 +185,13 @@ export default function SykkelbutikkDemo() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {bikes.map((bike) => (
               <div key={bike.name} className="group bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-200">
-                <div className="bg-slate-50 p-8 text-center text-6xl relative">
-                  {bike.emoji}
+                <div className="bg-slate-50 relative h-48">
+                  <Image
+                    src={bike.img}
+                    alt={bike.name}
+                    fill
+                    className="object-contain p-4"
+                  />
                   {bike.tag && (
                     <span className={`absolute top-3 right-3 ${bike.tagColor} text-white text-xs font-bold px-2.5 py-1 rounded-full`}>
                       {bike.tag}
