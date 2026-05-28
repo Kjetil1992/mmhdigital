@@ -3,10 +3,11 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { label: "Hjem", href: "#hjem" },
-  { label: "Tjenester", href: "#tjenester" },
-  { label: "Om oss", href: "#om-oss" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Hjem", href: "/#hjem" },
+  { label: "Tjenester", href: "/#tjenester" },
+  { label: "Prosjekter", href: "/prosjekter" },
+  { label: "Om oss", href: "/#om-oss" },
+  { label: "Kontakt", href: "/#kontakt" },
 ];
 
 export default function Navbar() {
@@ -43,7 +44,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#kontakt"
+            href="/#kontakt"
             className="bg-blue-600 text-white text-sm font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-colors"
           >
             Kom i gang
@@ -78,7 +79,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#kontakt"
+            href="/#kontakt"
             onClick={() => setMenuOpen(false)}
             className="bg-blue-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg text-center hover:bg-blue-700 transition-colors"
           >
