@@ -24,15 +24,16 @@ export default function Hero() {
         </span>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-slate-900 leading-tight tracking-tight mb-6">
-          Vi bygger nettsider
+          Vi bygger digitale løsninger
           <br />
-          <span className="text-blue-600">og apper</span> som leverer
+          <span className="text-blue-600">som får bedrifter til å vokse</span>
         </h1>
 
-        <p className="text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">
-          MMH Digital er din partner for profesjonelle digitale løsninger. Fra
-          idé til ferdig produkt – vi leverer kvalitet som hjelper bedriften din
-          å vokse.
+        <p className="text-lg sm:text-xl text-slate-500 max-w-3xl mx-auto mb-10 leading-relaxed">
+          MMHDigital utvikler moderne nettsider og kraftige apper for bedrifter
+          som vil skille seg ut i et konkurransepreget marked. Vi kombinerer
+          design, teknologi og strategi for å skape løsninger som ikke bare ser
+          imponerende ut — men som faktisk leverer resultater.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,27 +49,6 @@ export default function Hero() {
           >
             Se våre tjenester
           </a>
-        </div>
-
-        <div className="mt-16 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-slate-500">
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Profesjonelt design
-          </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Rask leveranse
-          </div>
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-            Norsk support
-          </div>
         </div>
       </div>
 
