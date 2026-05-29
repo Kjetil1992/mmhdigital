@@ -188,6 +188,36 @@ export default function Prosjekter() {
                   </a>
                 </div>
               </div>
+
+              {/* Lagapp demo */}
+              <div className="group bg-white border border-slate-100 rounded-2xl overflow-hidden hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
+                <div className="bg-green-800 px-4 py-3 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+                      <span className="text-green-700 font-extrabold text-xs">FK</span>
+                    </div>
+                    <span className="text-white font-bold text-sm">Fjord FK</span>
+                  </div>
+                  <span className="text-green-200 text-xs">4. plass · 21 poeng</span>
+                </div>
+                <div className="p-6">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-xs font-bold bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full border border-amber-200 uppercase tracking-wide">Demo</span>
+                    <span className="text-xs text-slate-400">Fotball / Lagapp</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mt-2 mb-1">Fjord FK – Lagapp</h3>
+                  <p className="text-slate-500 text-sm mb-5">
+                    Mobilapp for fotballag med kampoversikt, spillertropp, seriestilling og treningsplan.
+                  </p>
+                  <a
+                    href="/demo/lagapp"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700"
+                  >
+                    Se demo →
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
